@@ -1,0 +1,6 @@
+
+2021-09-20T22:28:00
+Traceback (most recent call last):
+  File "simple_training.py", line 44, in <module>
+    assert 0
+AssertionError
