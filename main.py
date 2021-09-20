@@ -1,14 +1,29 @@
+import argparse
+
 
 import wandb
 
-from sweep_config import sweep_config
+
+from sweep_config.config_generator import get_sweep_config
 from trainer.trainer import train
 
-def main():
 
+def get_parser():
+    parser = argparse.ArgumentParser(description='Mode selection for training')
+    parser.add_argument("--sweep_config", type=str, default="bayes",
+        help='sweep config. one of random, grid or bayes.(default[str] : bayes) '
+    )
+
+    return parser
+
+def main(parser):
+
+    args = parser.parse_args()
+    sweep_config = get_sweep_config(args.sweep_config)
+    
     wandb.login()
     sweep_id = wandb.sweep(
-    project="simple-classification-sweep-2",
+    project=f"simple-classification-sweep_{args.sweep_config}",
     sweep = sweep_config
     )
 
@@ -16,4 +31,5 @@ def main():
     wandb.agent(sweep_id, function=train, count=count)
 
 if __name__ == "__main__":
-    main()
+    parser = get_parser()
+    main(parser)
