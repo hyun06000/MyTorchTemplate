@@ -1,0 +1,20 @@
+wandb_version: 1
+
+ARCHITECTURE:
+  value: single-layer-perceptron
+BATCH_SIZE:
+  value: 32
+DATASET:
+  value: MNIST-handwrite
+DATA_PATH:
+  value: ../dataset/
+EPOCHS:
+  value: 10
+NOW:
+  value: '2021-09-20T23:07:46'
+NUM_WORKERS:
+  value: 1
+SAVEFIG_NAME:
+  value: result.png
+learning_rate:
+  value: 0.045184892284203915

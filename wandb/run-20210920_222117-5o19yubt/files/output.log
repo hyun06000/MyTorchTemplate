@@ -1,0 +1,32 @@
+/usr/local/lib/python3.6/dist-packages/torchvision/datasets/mnist.py:498: UserWarning: The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /pytorch/torch/csrc/utils/tensor_numpy.cpp:180.)
+  return torch.from_numpy(parsed.astype(m[2], copy=False)).view(*s)
+torch version ::: 1.9.0+cu111
+device        ::: cuda:0
+Dataset
+DataLoader
+Model
+loss
+opt
+tr_loss_avg ::: 1.8631291389465332, tr_acc_avg ::: 0.6070478723404256
+val_loss_avg ::: 1.4956787824630737, val_acc_avg ::: 0.77978515625
+tr_loss_avg ::: 1.2938339710235596, tr_acc_avg ::: 0.7903867464539007
+val_loss_avg ::: 1.086270809173584, val_acc_avg ::: 0.82333984375
+tr_loss_avg ::: 0.9967013597488403, tr_acc_avg ::: 0.8209940159574468
+val_loss_avg ::: 0.876894474029541, val_acc_avg ::: 0.83916015625
+tr_loss_avg ::: 0.8264675736427307, tr_acc_avg ::: 0.8386746453900709
+val_loss_avg ::: 0.7469634413719177, val_acc_avg ::: 0.8541015625
+tr_loss_avg ::: 0.7188276052474976, tr_acc_avg ::: 0.850675975177305
+val_loss_avg ::: 0.6519269347190857, val_acc_avg ::: 0.86689453125
+tr_loss_avg ::: 0.6444433331489563, tr_acc_avg ::: 0.859302969858156
+val_loss_avg ::: 0.5966871380805969, val_acc_avg ::: 0.87119140625
+tr_loss_avg ::: 0.589586615562439, tr_acc_avg ::: 0.8668107269503547
+val_loss_avg ::: 0.5419216752052307, val_acc_avg ::: 0.8822265625
+tr_loss_avg ::: 0.54754239320755, tr_acc_avg ::: 0.8724512411347517
+val_loss_avg ::: 0.5085451602935791, val_acc_avg ::: 0.8865234375
+tr_loss_avg ::: 0.5146062970161438, tr_acc_avg ::: 0.8767287234042553
+val_loss_avg ::: 0.4781053960323334, val_acc_avg ::: 0.88505859375
+tr_loss_avg ::: 0.4873751103878021, tr_acc_avg ::: 0.8812610815602836
+val_loss_avg ::: 0.45192620158195496, val_acc_avg ::: 0.89208984375
+training finishes
+result png
+done

@@ -1,0 +1,12 @@
+wandb_version: 1
+
+NOW:
+  value: '2021-09-20T23:02:56'
+SAVEFIG_NAME:
+  value: result.png
+batchsize:
+  value: 32
+epochs:
+  value: 10
+learning_rate:
+  value: 0.05270379145751152

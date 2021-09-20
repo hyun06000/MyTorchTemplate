@@ -1,0 +1,146 @@
+2021-09-20 23:05:17,065 INFO    MainThread:551260 [internal.py:wandb_internal():89] W&B internal server running at pid: 551260, started at: 2021-09-20 23:05:17.065726
+2021-09-20 23:05:17,066 DEBUG   HandlerThread:551260 [handler.py:handle_request():126] handle_request: check_version
+2021-09-20 23:05:17,066 INFO    WriterThread:551260 [datastore.py:open_for_write():77] open: /tf/CI/MyTorchTemplate/wandb/run-20210920_230516-5740dh51/run-5740dh51.wandb
+2021-09-20 23:05:17,068 DEBUG   SenderThread:551260 [sender.py:send():182] send: header
+2021-09-20 23:05:17,068 DEBUG   SenderThread:551260 [sender.py:send_request():196] send_request: check_version
+2021-09-20 23:05:17,111 DEBUG   SenderThread:551260 [sender.py:send():182] send: run
+2021-09-20 23:05:17,334 INFO    SenderThread:551260 [dir_watcher.py:__init__():169] watching files in: /tf/CI/MyTorchTemplate/wandb/run-20210920_230516-5740dh51/files
+2021-09-20 23:05:17,334 INFO    SenderThread:551260 [sender.py:_start_run_threads():743] run started: 5740dh51 with start time 1632146716
+2021-09-20 23:05:17,334 DEBUG   SenderThread:551260 [sender.py:send():182] send: summary
+2021-09-20 23:05:17,334 INFO    SenderThread:551260 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-09-20 23:05:17,334 DEBUG   HandlerThread:551260 [handler.py:handle_request():126] handle_request: run_start
+2021-09-20 23:05:18,177 DEBUG   HandlerThread:551260 [meta.py:__init__():40] meta init
+2021-09-20 23:05:18,177 DEBUG   HandlerThread:551260 [meta.py:__init__():54] meta init done
+2021-09-20 23:05:18,177 DEBUG   HandlerThread:551260 [meta.py:probe():211] probe
+2021-09-20 23:05:18,182 DEBUG   HandlerThread:551260 [meta.py:_setup_git():201] setup git
+2021-09-20 23:05:18,192 DEBUG   HandlerThread:551260 [meta.py:_setup_git():208] setup git done
+2021-09-20 23:05:18,193 DEBUG   HandlerThread:551260 [meta.py:_save_pip():58] save pip
+2021-09-20 23:05:18,193 DEBUG   HandlerThread:551260 [meta.py:_save_pip():72] save pip done
+2021-09-20 23:05:18,193 DEBUG   HandlerThread:551260 [meta.py:probe():249] probe done
+2021-09-20 23:05:18,194 DEBUG   SenderThread:551260 [sender.py:send():182] send: files
+2021-09-20 23:05:18,194 INFO    SenderThread:551260 [sender.py:_save_file():873] saving file wandb-metadata.json with policy now
+2021-09-20 23:05:18,198 DEBUG   HandlerThread:551260 [handler.py:handle_request():126] handle_request: stop_status
+2021-09-20 23:05:18,199 DEBUG   SenderThread:551260 [sender.py:send_request():196] send_request: stop_status
+2021-09-20 23:05:18,215 DEBUG   HandlerThread:551260 [handler.py:handle_request():126] handle_request: poll_exit
+2021-09-20 23:05:18,338 INFO    Thread-8  :551260 [dir_watcher.py:_on_file_created():217] file/dir created: /tf/CI/MyTorchTemplate/wandb/run-20210920_230516-5740dh51/files/requirements.txt
+2021-09-20 23:05:18,340 INFO    Thread-8  :551260 [dir_watcher.py:_on_file_created():217] file/dir created: /tf/CI/MyTorchTemplate/wandb/run-20210920_230516-5740dh51/files/wandb-metadata.json
+2021-09-20 23:05:18,340 INFO    Thread-8  :551260 [dir_watcher.py:_on_file_created():217] file/dir created: /tf/CI/MyTorchTemplate/wandb/run-20210920_230516-5740dh51/files/wandb-summary.json
+2021-09-20 23:05:18,341 INFO    Thread-8  :551260 [dir_watcher.py:_on_file_created():217] file/dir created: /tf/CI/MyTorchTemplate/wandb/run-20210920_230516-5740dh51/files/output.log
+2021-09-20 23:05:18,396 DEBUG   SenderThread:551260 [sender.py:send():182] send: config
+2021-09-20 23:05:18,397 DEBUG   SenderThread:551260 [sender.py:send():182] send: telemetry
+2021-09-20 23:05:18,397 DEBUG   SenderThread:551260 [sender.py:send():182] send: exit
+2021-09-20 23:05:18,397 INFO    SenderThread:551260 [sender.py:send_exit():291] handling exit code: 1
+2021-09-20 23:05:18,397 INFO    SenderThread:551260 [sender.py:send_exit():293] handling runtime: 0
+2021-09-20 23:05:18,397 INFO    SenderThread:551260 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-09-20 23:05:18,397 INFO    SenderThread:551260 [sender.py:send_exit():303] send defer
+2021-09-20 23:05:18,397 DEBUG   SenderThread:551260 [sender.py:send_request():196] send_request: poll_exit
+2021-09-20 23:05:18,398 DEBUG   HandlerThread:551260 [handler.py:handle_request():126] handle_request: defer
+2021-09-20 23:05:18,398 INFO    HandlerThread:551260 [handler.py:handle_request_defer():143] handle defer: 0
+2021-09-20 23:05:18,398 DEBUG   SenderThread:551260 [sender.py:send_request():196] send_request: defer
+2021-09-20 23:05:18,398 INFO    SenderThread:551260 [sender.py:send_request_defer():312] handle sender defer: 0
+2021-09-20 23:05:18,398 INFO    SenderThread:551260 [sender.py:transition_state():316] send defer: 1
+2021-09-20 23:05:18,398 DEBUG   HandlerThread:551260 [handler.py:handle_request():126] handle_request: defer
+2021-09-20 23:05:18,398 INFO    HandlerThread:551260 [handler.py:handle_request_defer():143] handle defer: 1
+2021-09-20 23:05:18,509 DEBUG   HandlerThread:551260 [handler.py:handle_request():126] handle_request: poll_exit
+2021-09-20 23:05:18,510 DEBUG   SenderThread:551260 [sender.py:send_request():196] send_request: defer
+2021-09-20 23:05:18,511 INFO    SenderThread:551260 [sender.py:send_request_defer():312] handle sender defer: 1
+2021-09-20 23:05:18,511 INFO    SenderThread:551260 [sender.py:transition_state():316] send defer: 2
+2021-09-20 23:05:18,512 DEBUG   SenderThread:551260 [sender.py:send_request():196] send_request: poll_exit
+2021-09-20 23:05:18,512 DEBUG   SenderThread:551260 [sender.py:send():182] send: stats
+2021-09-20 23:05:18,513 DEBUG   HandlerThread:551260 [handler.py:handle_request():126] handle_request: defer
+2021-09-20 23:05:18,514 INFO    HandlerThread:551260 [handler.py:handle_request_defer():143] handle defer: 2
+2021-09-20 23:05:18,515 DEBUG   SenderThread:551260 [sender.py:send_request():196] send_request: defer
+2021-09-20 23:05:18,515 INFO    SenderThread:551260 [sender.py:send_request_defer():312] handle sender defer: 2
+2021-09-20 23:05:18,515 INFO    SenderThread:551260 [sender.py:transition_state():316] send defer: 3
+2021-09-20 23:05:18,516 DEBUG   HandlerThread:551260 [handler.py:handle_request():126] handle_request: defer
+2021-09-20 23:05:18,516 INFO    HandlerThread:551260 [handler.py:handle_request_defer():143] handle defer: 3
+2021-09-20 23:05:18,517 DEBUG   SenderThread:551260 [sender.py:send():182] send: summary
+2021-09-20 23:05:18,518 INFO    SenderThread:551260 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-09-20 23:05:18,518 DEBUG   SenderThread:551260 [sender.py:send_request():196] send_request: defer
+2021-09-20 23:05:18,518 INFO    SenderThread:551260 [sender.py:send_request_defer():312] handle sender defer: 3
+2021-09-20 23:05:18,519 INFO    SenderThread:551260 [sender.py:transition_state():316] send defer: 4
+2021-09-20 23:05:18,519 DEBUG   HandlerThread:551260 [handler.py:handle_request():126] handle_request: defer
+2021-09-20 23:05:18,519 INFO    HandlerThread:551260 [handler.py:handle_request_defer():143] handle defer: 4
+2021-09-20 23:05:18,520 DEBUG   SenderThread:551260 [sender.py:send_request():196] send_request: defer
+2021-09-20 23:05:18,520 INFO    SenderThread:551260 [sender.py:send_request_defer():312] handle sender defer: 4
+2021-09-20 23:05:18,616 DEBUG   HandlerThread:551260 [handler.py:handle_request():126] handle_request: poll_exit
+2021-09-20 23:05:18,775 INFO    SenderThread:551260 [sender.py:transition_state():316] send defer: 5
+2021-09-20 23:05:18,775 DEBUG   SenderThread:551260 [sender.py:send_request():196] send_request: poll_exit
+2021-09-20 23:05:18,776 DEBUG   HandlerThread:551260 [handler.py:handle_request():126] handle_request: defer
+2021-09-20 23:05:18,776 INFO    HandlerThread:551260 [handler.py:handle_request_defer():143] handle defer: 5
+2021-09-20 23:05:18,776 DEBUG   SenderThread:551260 [sender.py:send_request():196] send_request: defer
+2021-09-20 23:05:18,776 INFO    SenderThread:551260 [sender.py:send_request_defer():312] handle sender defer: 5
+2021-09-20 23:05:18,776 INFO    SenderThread:551260 [dir_watcher.py:finish():283] shutting down directory watcher
+2021-09-20 23:05:18,877 DEBUG   HandlerThread:551260 [handler.py:handle_request():126] handle_request: poll_exit
+2021-09-20 23:05:19,112 INFO    Thread-11 :551260 [upload_job.py:push():137] Uploaded file /tmp/tmprco9ich7wandb/1p027bzz-wandb-metadata.json
+2021-09-20 23:05:19,336 INFO    Thread-8  :551260 [dir_watcher.py:_on_file_modified():230] file/dir modified: /tf/CI/MyTorchTemplate/wandb/run-20210920_230516-5740dh51/files/wandb-summary.json
+2021-09-20 23:05:19,337 INFO    SenderThread:551260 [dir_watcher.py:_on_file_modified():230] file/dir modified: /tf/CI/MyTorchTemplate/wandb/run-20210920_230516-5740dh51/files/config.yaml
+2021-09-20 23:05:19,338 INFO    SenderThread:551260 [dir_watcher.py:finish():313] scan: /tf/CI/MyTorchTemplate/wandb/run-20210920_230516-5740dh51/files
+2021-09-20 23:05:19,338 INFO    SenderThread:551260 [dir_watcher.py:finish():327] scan save: /tf/CI/MyTorchTemplate/wandb/run-20210920_230516-5740dh51/files/requirements.txt requirements.txt
+2021-09-20 23:05:19,339 INFO    SenderThread:551260 [dir_watcher.py:finish():327] scan save: /tf/CI/MyTorchTemplate/wandb/run-20210920_230516-5740dh51/files/wandb-summary.json wandb-summary.json
+2021-09-20 23:05:19,340 INFO    SenderThread:551260 [dir_watcher.py:finish():327] scan save: /tf/CI/MyTorchTemplate/wandb/run-20210920_230516-5740dh51/files/output.log output.log
+2021-09-20 23:05:19,348 INFO    SenderThread:551260 [dir_watcher.py:finish():327] scan save: /tf/CI/MyTorchTemplate/wandb/run-20210920_230516-5740dh51/files/config.yaml config.yaml
+2021-09-20 23:05:19,348 INFO    SenderThread:551260 [dir_watcher.py:finish():327] scan save: /tf/CI/MyTorchTemplate/wandb/run-20210920_230516-5740dh51/files/wandb-metadata.json wandb-metadata.json
+2021-09-20 23:05:19,348 INFO    SenderThread:551260 [sender.py:transition_state():316] send defer: 6
+2021-09-20 23:05:19,349 DEBUG   SenderThread:551260 [sender.py:send_request():196] send_request: poll_exit
+2021-09-20 23:05:19,351 DEBUG   HandlerThread:551260 [handler.py:handle_request():126] handle_request: defer
+2021-09-20 23:05:19,352 INFO    HandlerThread:551260 [handler.py:handle_request_defer():143] handle defer: 6
+2021-09-20 23:05:19,352 DEBUG   SenderThread:551260 [sender.py:send_request():196] send_request: defer
+2021-09-20 23:05:19,352 INFO    SenderThread:551260 [sender.py:send_request_defer():312] handle sender defer: 6
+2021-09-20 23:05:19,352 INFO    SenderThread:551260 [file_pusher.py:finish():177] shutting down file pusher
+2021-09-20 23:05:19,452 DEBUG   HandlerThread:551260 [handler.py:handle_request():126] handle_request: poll_exit
+2021-09-20 23:05:19,452 DEBUG   SenderThread:551260 [sender.py:send_request():196] send_request: poll_exit
+2021-09-20 23:05:19,554 DEBUG   HandlerThread:551260 [handler.py:handle_request():126] handle_request: poll_exit
+2021-09-20 23:05:19,554 DEBUG   SenderThread:551260 [sender.py:send_request():196] send_request: poll_exit
+2021-09-20 23:05:19,656 DEBUG   HandlerThread:551260 [handler.py:handle_request():126] handle_request: poll_exit
+2021-09-20 23:05:19,656 DEBUG   SenderThread:551260 [sender.py:send_request():196] send_request: poll_exit
+2021-09-20 23:05:19,758 DEBUG   HandlerThread:551260 [handler.py:handle_request():126] handle_request: poll_exit
+2021-09-20 23:05:19,760 DEBUG   SenderThread:551260 [sender.py:send_request():196] send_request: poll_exit
+2021-09-20 23:05:19,862 DEBUG   HandlerThread:551260 [handler.py:handle_request():126] handle_request: poll_exit
+2021-09-20 23:05:19,863 DEBUG   SenderThread:551260 [sender.py:send_request():196] send_request: poll_exit
+2021-09-20 23:05:19,965 DEBUG   HandlerThread:551260 [handler.py:handle_request():126] handle_request: poll_exit
+2021-09-20 23:05:19,966 DEBUG   SenderThread:551260 [sender.py:send_request():196] send_request: poll_exit
+2021-09-20 23:05:19,992 INFO    Thread-13 :551260 [upload_job.py:push():137] Uploaded file /tf/CI/MyTorchTemplate/wandb/run-20210920_230516-5740dh51/files/wandb-summary.json
+2021-09-20 23:05:20,067 DEBUG   HandlerThread:551260 [handler.py:handle_request():126] handle_request: poll_exit
+2021-09-20 23:05:20,067 DEBUG   SenderThread:551260 [sender.py:send_request():196] send_request: poll_exit
+2021-09-20 23:05:20,124 INFO    Thread-12 :551260 [upload_job.py:push():137] Uploaded file /tf/CI/MyTorchTemplate/wandb/run-20210920_230516-5740dh51/files/requirements.txt
+2021-09-20 23:05:20,169 DEBUG   HandlerThread:551260 [handler.py:handle_request():126] handle_request: poll_exit
+2021-09-20 23:05:20,170 DEBUG   SenderThread:551260 [sender.py:send_request():196] send_request: poll_exit
+2021-09-20 23:05:20,272 DEBUG   HandlerThread:551260 [handler.py:handle_request():126] handle_request: poll_exit
+2021-09-20 23:05:20,273 DEBUG   SenderThread:551260 [sender.py:send_request():196] send_request: poll_exit
+2021-09-20 23:05:20,324 INFO    Thread-14 :551260 [upload_job.py:push():137] Uploaded file /tf/CI/MyTorchTemplate/wandb/run-20210920_230516-5740dh51/files/config.yaml
+2021-09-20 23:05:20,375 DEBUG   HandlerThread:551260 [handler.py:handle_request():126] handle_request: poll_exit
+2021-09-20 23:05:20,376 DEBUG   SenderThread:551260 [sender.py:send_request():196] send_request: poll_exit
+2021-09-20 23:05:20,478 DEBUG   HandlerThread:551260 [handler.py:handle_request():126] handle_request: poll_exit
+2021-09-20 23:05:20,478 DEBUG   SenderThread:551260 [sender.py:send_request():196] send_request: poll_exit
+2021-09-20 23:05:20,525 INFO    Thread-7  :551260 [sender.py:transition_state():316] send defer: 7
+2021-09-20 23:05:20,526 DEBUG   HandlerThread:551260 [handler.py:handle_request():126] handle_request: defer
+2021-09-20 23:05:20,526 INFO    HandlerThread:551260 [handler.py:handle_request_defer():143] handle defer: 7
+2021-09-20 23:05:20,526 DEBUG   SenderThread:551260 [sender.py:send_request():196] send_request: defer
+2021-09-20 23:05:20,527 INFO    SenderThread:551260 [sender.py:send_request_defer():312] handle sender defer: 7
+2021-09-20 23:05:20,580 DEBUG   HandlerThread:551260 [handler.py:handle_request():126] handle_request: poll_exit
+2021-09-20 23:05:20,716 INFO    SenderThread:551260 [sender.py:transition_state():316] send defer: 8
+2021-09-20 23:05:20,716 DEBUG   SenderThread:551260 [sender.py:send_request():196] send_request: poll_exit
+2021-09-20 23:05:20,717 DEBUG   HandlerThread:551260 [handler.py:handle_request():126] handle_request: defer
+2021-09-20 23:05:20,718 INFO    HandlerThread:551260 [handler.py:handle_request_defer():143] handle defer: 8
+2021-09-20 23:05:20,718 DEBUG   SenderThread:551260 [sender.py:send_request():196] send_request: defer
+2021-09-20 23:05:20,719 INFO    SenderThread:551260 [sender.py:send_request_defer():312] handle sender defer: 8
+2021-09-20 23:05:20,719 INFO    SenderThread:551260 [sender.py:transition_state():316] send defer: 9
+2021-09-20 23:05:20,720 DEBUG   SenderThread:551260 [sender.py:send():182] send: final
+2021-09-20 23:05:20,721 DEBUG   HandlerThread:551260 [handler.py:handle_request():126] handle_request: defer
+2021-09-20 23:05:20,721 DEBUG   SenderThread:551260 [sender.py:send():182] send: footer
+2021-09-20 23:05:20,722 INFO    HandlerThread:551260 [handler.py:handle_request_defer():143] handle defer: 9
+2021-09-20 23:05:20,722 DEBUG   SenderThread:551260 [sender.py:send_request():196] send_request: defer
+2021-09-20 23:05:20,722 INFO    SenderThread:551260 [sender.py:send_request_defer():312] handle sender defer: 9
+2021-09-20 23:05:20,819 DEBUG   HandlerThread:551260 [handler.py:handle_request():126] handle_request: poll_exit
+2021-09-20 23:05:20,820 DEBUG   SenderThread:551260 [sender.py:send_request():196] send_request: poll_exit
+2021-09-20 23:05:20,820 INFO    SenderThread:551260 [file_pusher.py:join():182] waiting for file pusher
+2021-09-20 23:05:20,822 DEBUG   HandlerThread:551260 [handler.py:handle_request():126] handle_request: get_summary
+2021-09-20 23:05:20,824 DEBUG   HandlerThread:551260 [handler.py:handle_request():126] handle_request: sampled_history
+2021-09-20 23:05:20,826 DEBUG   HandlerThread:551260 [handler.py:handle_request():126] handle_request: shutdown
+2021-09-20 23:05:20,826 INFO    HandlerThread:551260 [handler.py:finish():683] shutting down handler
+2021-09-20 23:05:21,722 INFO    WriterThread:551260 [datastore.py:close():281] close: /tf/CI/MyTorchTemplate/wandb/run-20210920_230516-5740dh51/run-5740dh51.wandb
+2021-09-20 23:05:21,821 INFO    SenderThread:551260 [sender.py:finish():979] shutting down sender
+2021-09-20 23:05:21,821 INFO    SenderThread:551260 [file_pusher.py:finish():177] shutting down file pusher
+2021-09-20 23:05:21,821 INFO    SenderThread:551260 [file_pusher.py:join():182] waiting for file pusher
+2021-09-20 23:05:21,825 INFO    MainThread:551260 [internal.py:handle_exit():76] Internal process exited
