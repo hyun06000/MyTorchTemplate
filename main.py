@@ -1,15 +1,15 @@
 
 import wandb
 
-from sweep_config import sweep_config
+from sweep_config.sweep_config_bayes import sweep_config_bayes
 from trainer.trainer import train
 
 def main():
 
     wandb.login()
     sweep_id = wandb.sweep(
-    project="simple-classification-sweep-2",
-    sweep = sweep_config
+    project="simple-classification-sweep-bayes",
+    sweep = sweep_config_bayes
     )
 
     count = 5 # number of runs to execute

@@ -1,8 +1,8 @@
-sweep_config = {
-    "method" : "random", # grid, random, bayes(metric required)
+sweep_config_grid = {
+    "method" : "grid",
     "parameters" : {
         "EPOCHS" : {
-            "value" : 10
+            "value" : 5
         },
         "BATCH_SIZE" : {
             "values" : [16, 32, 64, 128]
