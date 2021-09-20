@@ -1,0 +1,27 @@
+{
+    "os": "Linux-5.4.0-84-generic-x86_64-with-Ubuntu-18.04-bionic",
+    "python": "3.6.9",
+    "heartbeatAt": "2021-09-20T17:11:54.157972",
+    "startedAt": "2021-09-20T17:11:52.536299",
+    "docker": null,
+    "gpu": "GeForce RTX 3070",
+    "gpu_count": 1,
+    "cpu_count": 16,
+    "cuda": null,
+    "args": [
+        "--sweep_config",
+        "random"
+    ],
+    "state": "running",
+    "program": "main.py",
+    "codePath": "main.py",
+    "git": {
+        "remote": "https://github.com/hyun06000/MyTorchTemplate.git",
+        "commit": "27d2532a182cd3d5bab4820fae4a6e87ac7bc342"
+    },
+    "email": "hyun06000@gmail.com",
+    "root": "/tf/CI/MyTorchTemplate",
+    "host": "bc545e922955",
+    "username": "root",
+    "executable": "/usr/local/bin/python"
+}
