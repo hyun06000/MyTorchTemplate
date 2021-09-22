@@ -1,12 +1,17 @@
+import sys
+sys.path.append("trainer")
+
 from datetime import datetime
 
 import matplotlib.pyplot as plt
-
 import wandb
 import torch
 import torch.nn as nn
 import torch.optim as optim
-from torchvision import datasets,transforms
+from torch.utils.data import DataLoader
+from torchvision import transforms
+
+from my_dataset import myDataset
 
 def train():
     with wandb.init() as run:
@@ -23,14 +28,35 @@ def train():
         print ("torch version ::: %s"%(torch.__version__))
         print ("device        ::: %s"%(device))
 
-        mnist_train = datasets.MNIST(root=hparams.DATA_PATH,train=True,transform=transforms.ToTensor(),download=True)
-        mnist_test = datasets.MNIST(root=hparams.DATA_PATH,train=False,transform=transforms.ToTensor(),download=True)
+        mnist_train = myDataset(
+            name="MNIST_train",
+            data_path=hparams.DATA_PATH,
+            train=True,
+            transforms=transforms.ToTensor(),
+            download=True
+        )
+        mnist_test = myDataset(
+            name="MNIST_test",
+            data_path=hparams.DATA_PATH,
+            train=False,
+            transforms=transforms.ToTensor(),
+            download=True
+        )
         print ("Dataset")
 
-        tr_loader = torch.utils.data.DataLoader(mnist_train,batch_size=hparams.BATCH_SIZE,shuffle=True,num_workers=hparams.NUM_WORKERS)
-        val_loader = torch.utils.data.DataLoader(mnist_test,batch_size=hparams.BATCH_SIZE,shuffle=True,num_workers=hparams.NUM_WORKERS)
+        tr_loader = DataLoader(
+            mnist_train,
+            batch_size=hparams.BATCH_SIZE,
+            shuffle=True,
+            num_workers=hparams.NUM_WORKERS
+        )
+        val_loader = DataLoader(
+            mnist_test,
+            batch_size=hparams.BATCH_SIZE,
+            shuffle=True,
+            num_workers=hparams.NUM_WORKERS
+        )
         print ("DataLoader")
-
 
 
         class simpleNetwork(nn.Module):
