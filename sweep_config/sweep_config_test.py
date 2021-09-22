@@ -6,9 +6,11 @@ import unittest
 from sweep_config_random import sweep_config_random
 from sweep_config_grid import sweep_config_grid
 from sweep_config_bayes import sweep_config_bayes
+from config_generator import get_sweep_config
+
 
 class sweepConfigRandomTests(unittest.TestCase):
-    
+    sweep_config_random = get_sweep_config("random")
     def test_config_type(self):
         self.assertTrue(isinstance(sweep_config_random,dict))
     
@@ -29,6 +31,7 @@ class sweepConfigRandomTests(unittest.TestCase):
         
 
 class sweepConfigGridTests(unittest.TestCase):
+    sweep_config_grid = get_sweep_config("grid")
     def test_config_type(self):
         self.assertTrue(isinstance(sweep_config_grid,dict))
     
@@ -57,6 +60,7 @@ class sweepConfigGridTests(unittest.TestCase):
 
 
 class sweepConfigBayesTest(unittest.TestCase):
+    sweep_config_bayes = get_sweep_config("bayes")
     def test_config_type(self):
         self.assertTrue(isinstance(sweep_config_bayes,dict))
     
