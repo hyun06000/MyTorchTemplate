@@ -46,6 +46,10 @@ class myDatasetTests(unittest.TestCase):
                 self.assertEqual(type(X.max().item()), img_type_ref)
                 # label type test
                 self.assertEqual(type(y), label_type_ref)
+    def test_repr(self):
+        for MD in [tr_MD, te_MD]:
+            self.assertTrue(isinstance(MD.__repr__(),str))
+    
 
 
 if __name__ == "__main__":
