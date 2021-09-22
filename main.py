@@ -1,4 +1,5 @@
 import argparse
+from datetime import datetime
 
 
 import wandb
@@ -20,10 +21,11 @@ def main(parser):
 
     args = parser.parse_args()
     sweep_config = get_sweep_config(args.sweep_config)
-    
+    now = datetime.now().isoformat(timespec='seconds').replace(":","-")
+
     wandb.login()
     sweep_id = wandb.sweep(
-    project=f"simple-classification-sweep_{args.sweep_config}",
+    project=f"simple-classification-sweep-{args.sweep_config}-[{now}]",
     sweep = sweep_config
     )
 

@@ -89,3 +89,4 @@ class sweepConfigBayesTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+    print("sweep_config_test.py done")
