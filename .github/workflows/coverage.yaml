@@ -23,6 +23,6 @@ jobs:
           coverage xml
       
       - name: Upload coverage report to code climate
-        use : paambaati/codeclimate-action@v2.7.5
+        uses : paambaati/codeclimate-action@v2.7.5
         env :
           CC_TEST_REPORTER_ID: 1b297159a739e9797dffddb582855c0c8d239939cad5bcfdb2a1271a0a1e8a31
