@@ -1,3 +1,6 @@
+import sys
+sys.path.append("sweep_config")
+
 import unittest
 
 from sweep_config_random import sweep_config_random
