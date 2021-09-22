@@ -26,7 +26,7 @@ jobs:
       - name: Generate coverage report
         run: |
           # descover and run the all coverage files under this directory 
-          coverage run --source=./ --omit "__init__.py" -m unittest discover -p "*_test.py"
+          coverage run --source=./ --omit "*__init__.py" -m unittest discover -p "*_test.py"
           coverage xml
       
       - name: Upload coverage report to code climate
