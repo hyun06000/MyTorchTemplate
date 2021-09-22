@@ -1,0 +1,9 @@
+/**/__pychache__/
+/**/wandb/
+/**/logs/
+/**/runs/
+/**/data/
+/**/dataset/
+
+log.*
+tmp.*
