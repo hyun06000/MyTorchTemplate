@@ -29,7 +29,7 @@ def main(parser):
     sweep = sweep_config
     )
 
-    count = 5 # number of runs to execute
+    count = 10 # number of runs to execute
     wandb.agent(sweep_id, function=train, count=count)
 
 if __name__ == "__main__":
